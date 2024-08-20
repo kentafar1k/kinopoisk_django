@@ -1,0 +1,21 @@
+{% extends 'movie_app/base.html' %}
+
+{% block title %} рэжиссёр {% endblock %}
+
+{% block content %}
+
+    <h2>Режиссёр</h2>
+    <h4>Имя - {{ director.first_name }}</h4>
+    <h4>Фамилия - {{ director.last_name }}</h4>
+    <h4>Майл - {{ director.director_email }}</h4>
+    <hr>
+    <h5>список фильмов</h5>
+    <ul>
+        {% for c in director.movies.all %}
+            <li>
+                {{c}}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
