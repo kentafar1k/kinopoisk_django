@@ -71,5 +71,5 @@ class MovieModelTestCase(TestCase):
         self.print_info('Finish test_movie_budget_default_value')
 
     def test_movie_del(self):
-        # Проверка удалений элемента
+        # Проверка удалений элемента.
         pass
